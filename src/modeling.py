@@ -22,12 +22,11 @@ from sklearn.metrics import (
     f1_score,
 )
 
-from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 
 try:
     from xgboost import XGBRegressor
-except:
+except ImportError:
     XGBRegressor = None
 
 
